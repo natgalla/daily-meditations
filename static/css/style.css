@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(200,215,200);
+}
+
+div {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  text-align: center;
+  padding: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+.quote {
+  margin-top: 10vh;
+}
+
+.divider {
+  border-bottom: 2px solid black;
+  top: 50vh;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#thich {
+  margin-bottom: 30px;
+  margin-top: 15vh;
+}
+
+#got {
+  position: relative;
+}
