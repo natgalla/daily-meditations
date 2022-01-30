@@ -1,33 +1,31 @@
 body {
-  background-color: rgb(200,215,200);
+    background-color: rgb(200, 215, 200);
+    font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
 div {
-  font-family: 'Zen Kaku Gothic New', sans-serif;
-  text-align: center;
-  padding: 10px;
-  padding-left: 100px;
-  padding-right: 100px;
-  margin: 10px;
-  font-size: 1.2em;
+    text-align: center;
+    font-size: 1.2em;
 }
 
-.quote {
-  margin-top: 10vh;
-}
-
-.divider {
-  border-bottom: 2px solid black;
-  top: 50vh;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-#thich {
-  margin-bottom: 30px;
-  margin-top: 15vh;
+.quote_wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 #got {
-  position: relative;
+    border-top: 2px solid black;
 }
+
+.quote {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote h5 {
+    margin: 0px;
+    padding: 0px 80px;
+}
+

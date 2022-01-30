@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Daily meditations</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
-  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <title>Daily meditations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
 </head>
 <body>
-  <div class='quote' id='thich'>{{ meditations.thich_quote }}</div>
-  <div class='divider'></div>
-  <div class='quote' id='got'>{{ meditations.got_saying }}</div>
-  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+<div class="quote_wrapper">
+    <div class='quote' id='thich'>
+        <h5>
+            {{ meditations.thich_quote }}
+        </h5>
+    </div>
+    <div class='quote' id='got'>
+        <h5>
+            {{ meditations.got_saying }}
+        </h5>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>
 </html>
